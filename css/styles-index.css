@@ -1,0 +1,174 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.title-container {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.title-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.title-container p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.login-container {
+    display: grid;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    width: 800px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 400% 400%;
+    animation: gradientText 15s ease infinite;
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.login-button {
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-weight: bold;
+    outline: none;
+    width: 100%;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+    transform: scale(1.05);
+}
+
+.login-button.google {
+    background: linear-gradient(to right, #4285F4, #DB4437, #F4B400, #0F9D58);
+    color: white;
+    border: none;
+}
+
+
+.login-button.facebook {
+    background: linear-gradient(to right, #1877F2, #2851A3, #3B5998, #8B9DC3);
+    color: white;
+    border: none;
+}
+
+
+.login-button.microsoft {
+    background: linear-gradient(to right, #f25022, #7fba00, #00a4ef, #ffb900);
+    color: white;
+    border: none;
+}
+
+
+
+.login-button.apple {
+    background: linear-gradient(to right, #000, #333);
+    color: white;
+    border: none;
+}
+
+
+/*MEDIA QUERYS*/
+
+/* Extra pequeño (teléfonos móviles) */
+@media (max-width: 575.98px) {
+    .login-container {
+        width: 70%;
+    }
+
+    .title-container h1 {
+        font-size: 2rem;
+    }
+
+    .title-container p {
+        font-size: 1.2rem;
+    }
+
+    .login-button {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Pequeño (retratos de tabletas) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .login-container {
+        width: 80%;
+    }
+}
+
+/* Mediano (paisajes de tabletas) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .login-container {
+        width: 80%;
+    }
+}
+
+/* Extra grande (pantallas grandes) */
+@media (min-width: 1200px) {
+    .login-container {
+        width: 90%;
+        max-width: 800px;
+    }
+
+    .title-container h1 {
+        font-size: 3rem;
+    }
+
+    .title-container p {
+        font-size: 1.8rem;
+    }
+}
+
+
+
