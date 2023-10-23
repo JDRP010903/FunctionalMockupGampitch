@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gammification Pitch Home</title>
+
+    <link rel="stylesheet" href="./css/styles-homeMenu.css">
+
+    <link href="https://cdn.jsdelivr.net/gh/boxicons/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://fullcalendar.io/releases/fullcalendar/5.10.1/main.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="user-info">
+            <a href="" class="user-link">
+                <img src="./assets/img/user-icon.png" alt="Ícono de Usuario" class="user-icon">
+                <span class="user-name">Nombre de Usuario</span>
+            </a>
+        </div>
+
+        <div class="settings">
+            <a href="" class="settings-link">
+                <img src="./assets/img/settings-icon.png" alt="Ícono de Configuración" class="settings-icon">
+                <span class="settings-text">Configuración</span>
+            </a>
+        </div>
+
+        <div class="notifications">
+            <a href="" class="notifications-link">
+                <img src="./assets/img/notification-icon.svg" alt="Ícono de Usuario" class="notifications-icon">
+                <span class="notifications-text">Notificaciones</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="seccionMetas">
+            <div class="metasActivas">
+                <h3>Metas Activas</h3>
+                <div class="metasActivasCont">
+                    <ul class="metasActivasCont">
+                        <li>Mejorar mi fluidez al hablar</li>
+                        <li>Perder el miedo al hablar en público</li>
+                        <li>Mejorar el tono de mi voz</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="metasProximas">
+                <h3>Metas Próximas</h3>
+                <ul class="metasProximasCont">
+                    <li>Meta 1: Viajar a Europa</li>
+                    <li>Meta 2: Aprender un nuevo idioma</li>
+                    <li>Meta 3: Iniciar un nuevo proyecto personal</li>
+                </ul>
+            </div>
+
+            <div class="agregarMeta">
+                <h3>Agregar Meta</h3>
+                <button class="agregarBtn">
+                    <box-icon name='plus' size="md" color='#4A90E2' class="plus-icon" ></box-icon>
+                </button>
+            </div>
+        </section>
+
+        <section class="seccionCalendario">
+            <div id='calendar'></div>
+        </section>
+
+        <section class="SeccionTareasNotas">
+
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
+    <script src="./Js/calendario.js"></script>
+</body>
+</html>

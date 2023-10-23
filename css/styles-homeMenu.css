@@ -1,0 +1,253 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to left, #ADD8E6, #87CEFA, #B0E2FF);
+}
+
+header {
+    background: transparent;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    border-bottom: 2px solid #87CEEB;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.notifications-link, .user-link, .settings-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px; /* Espacio interno */
+    border: 1px solid black; /* Borde del botón */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+.notifications-link:hover, .user-link:hover, .settings-link:hover {
+    background-color: #f0f0f0; /* Color de fondo al pasar el cursor */
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.user-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.user-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.settings-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.settings-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.notifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.notifications-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.notifications-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+
+/* MAIN */
+
+/* Sección de Metas */
+main {
+    display: grid;
+    grid-template-columns: 2fr 6fr 2fr;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.seccionMetas {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.metasActivas {
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.metasActivas h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.metasActivasCont {
+    height: 230px;
+    overflow: auto;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.metasActivasCont li {
+    background-color: #ffffff;
+    border: 10px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.metasActivasCont li:hover {
+    background-color: #e6f2ff;
+}
+
+.metasProximas {
+    margin-top: 10px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.metasProximas h3 {
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.metasProximasCont {
+    height: 180px;
+    overflow: auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.metasProximasCont li {
+    background-color: #ffffff;
+    border: 10px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.metasProximasCont li:hover {
+    background-color: #ffe6e6;
+}
+
+.agregarMeta {
+    margin-top: 10px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.agregarMeta h3 {
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.agregarBtn {
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.agregarMeta .plus-icon {
+    border: solid 1px #4A90E2;
+    border-radius: 50%;
+}
+
+.agregarBtn:hover {
+    background-color: #d0d0d0;
+}
+
+.agregarBtn:focus {
+    outline: none;
+}
+
+
+.seccionCalendario {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.SeccionTareasNotas {
+    background-color: transparent;
+    padding: 10px;
+}
+
+/* Sección del Calendario */
+
+.seccionCalendario {    
+    max-height: 750px;
+    overflow-y: auto;
+}
+
+
+
+
