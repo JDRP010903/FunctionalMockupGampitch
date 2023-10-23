@@ -6,16 +6,15 @@ body {
     color: black;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to left, #ADD8E6, #87CEFA, #B0E2FF);
+    background: #e0e0e0;
 }
 
 header {
-    background: transparent;
+    background: linear-gradient(to left, #81B6F4, #4A90E2, #A3CAFF);
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
-    border-bottom: 2px solid #87CEEB;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -119,13 +118,14 @@ main {
 }
 
 .metasActivas {
-    background-color: #f7f9fc;
+    background-color: #4A90E2;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .metasActivas h3 {
+    color: white;
     margin-top: 0;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 10px;
@@ -134,16 +134,27 @@ main {
 }
 
 .metasActivasCont {
-    height: 230px;
+    height: 180px;
     overflow: auto;
     list-style-type: none;
     padding: 0;
     margin-top: 0;
 }
 
+.metasActivasCont::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.metasActivasCont {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
 .metasActivasCont li {
     background-color: #ffffff;
-    border: 10px solid #e0e0e0;
+    border: 3px solid #e0e0e0;
     border-radius: 10px;
     padding: 10px 20px;
     margin-bottom: 10px;
@@ -156,13 +167,14 @@ main {
 
 .metasProximas {
     margin-top: 10px;
-    background-color: #f7f9fc;
+    background-color: #4A90E2;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .metasProximas h3 {
+    color: white;
     text-align: center;
     margin-top: 0;
     border-bottom: 1px solid #e0e0e0;
@@ -177,9 +189,19 @@ main {
     padding: 0;
 }
 
+.metasProximasCont::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+.metasProximasCont {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
 .metasProximasCont li {
     background-color: #ffffff;
-    border: 10px solid #e0e0e0;
+    border: 3px  solid #e0e0e0;
     border-radius: 10px;
     padding: 10px 20px;
     margin-bottom: 10px;
@@ -192,7 +214,7 @@ main {
 
 .agregarMeta {
     margin-top: 10px;
-    background-color: #f7f9fc;
+    background-color: #4A90E2;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -200,6 +222,7 @@ main {
 }
 
 .agregarMeta h3 {
+    color: white;
     text-align: center;
     margin-top: 0;
     border-bottom: 1px solid #e0e0e0;
@@ -243,10 +266,25 @@ main {
 
 /* Sección del Calendario */
 
-.seccionCalendario {    
-    max-height: 750px;
-    overflow-y: auto;
+.fc-col-header-cell {
+    border: 1px solid black !important;
 }
+
+.fc-daygrid-day {
+    border: 1px solid black !important;
+}
+
+.fc-view-harness {
+    border: 1px solid black !important;
+}
+
+.fc-event {
+    border: 1px solid black !important;
+}
+
+
+
+
 
 
 
