@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gammification Pitch Home</title>
+    <title>Gammification Pitch Start</title>
+    <link href="https://cdn.jsdelivr.net/gh/boxicons/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles-main.css">
 </head>
 <body>
+    <header>
+        <div class="user-info">
+            <img src="./assets/img/user-icon.png" alt="Ícono de Usuario" class="user-icon">
+            <span class="user-name">Nombre de Usuario</span>
+        </div>
+    </header>
+    <main>
+        <h1>Escribe tu meta a cumplir</h1>
+        <input type="text" id="goalInput" placeholder="Escribe tu meta..." list="goalOptions">
+        <datalist id="goalOptions">
+            <option value="Perder el miedo de hablar en público">
+            <option value="Mejorar el tono de mi voz">
+            <option value="Comenzar mi emprendimiento"> 
+            <option value="Establecer el objetivo de mi emprendimiento">
+        </datalist>
+        <p>Genera tus metas de interés utilizando IA</p>
+        <img src="./assets/img/Imagen_IA.png" alt="Imagen de IA" class="ai-image">
+
+        <div>
+            <a href="./homeMenu.html"><button class="start-button">Comenzar</button></a>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     
 </body>
 </html>

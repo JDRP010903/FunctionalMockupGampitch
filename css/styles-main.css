@@ -1,0 +1,151 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent white */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.user-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+main {
+    width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);  /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ai-image {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.start-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(90deg, #23a6d5, #23d5ab);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 20px;
+    outline: none;
+}
+
+.start-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.start-button:active {
+    transform: scale(0.95);
+}
+
+
+/* MEDIA QUERYS */
+
+/* Dispositivos pequeños (teléfonos en modo paisaje, 576px y más) */
+@media (max-width: 767px) {
+    main {
+        width: 80%; /* Ajusta el ancho para dar un poco más de espacio en los lados */
+    }
+    .user-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .user-name {
+        font-size: 1rem;
+    }
+}
+
+/* Dispositivos medianos (tablets, 768px y más) */
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        width: 80%;
+    }
+    .user-icon {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Dispositivos grandes (computadoras de escritorio, 992px y más) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Si necesitas hacer ajustes específicos para este rango, puedes agregarlos aquí */
+}
+
+/* Dispositivos extra grandes (pantallas grandes, 1200px y más) */
+@media (min-width: 1200px) {
+    /* Si necesitas hacer ajustes específicos para este rango, puedes agregarlos aquí */
+}
+
