@@ -38,6 +38,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    position: relative;
 }
 
 .user-icon {
@@ -60,6 +61,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    position: relative;
 }
 
 .settings-icon {
@@ -82,6 +84,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    position: relative;
 }
 
 .notifications-icon {
@@ -98,6 +101,90 @@ header {
     color: white;
     margin: 0;
 }
+
+.notifications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notifications-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee; /* Agrega una línea divisoria entre las notificaciones */
+    padding-bottom: 10px;
+}
+
+.notifications-list li:last-child {
+    border-bottom: none; /* Para que el último elemento no tenga una línea divisoria en la parte inferior */
+}
+
+.menu-overlay {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 1;
+    min-width: 160px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 100%; /* Alinea el borde superior del menú con el borde inferior de .user-info */
+    left: 50%; /* Centrar el menú horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar exactamente */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.menu-overlay a {
+    color: #2c3e50;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-overlay a:hover {
+    background-color: #e0e0e0;
+}
+
+.menu-offCanvas {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    width: 400px;
+    background-color: #FFFFFF;
+    box-shadow: -4px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s;
+    z-index: 2000;
+    overflow-y: auto;
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+}
+
+.closeNotificationsOffcanvas {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.notifications-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notifications-list li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+
 
 
 /* MAIN */

@@ -13,26 +13,46 @@
 <body>
     <header>
         <div class="user-info">
-            <a href="" class="user-link">
-                <box-icon name='user-circle' color='#ffffff' class="user-icon" ></box-icon>
+            <a href="#" class="user-link">
+                <box-icon name='user-circle' color='#ffffff' class="user-icon"></box-icon>
                 <span class="user-name">Nombre de Usuario</span>
             </a>
+            <div class="menu-overlay" id="userMenuOverlay">
+                <a href="#">Perfil</a>
+                <a href="#">Cerrar Sesión</a>
+            </div>
         </div>
-
+    
         <div class="settings">
-            <a href="" class="settings-link">
-                <box-icon name='cog' color='#ffffff' class="settings-icon" ></box-icon>
+            <a href="#" class="settings-link">
+                <box-icon name='cog' color='#ffffff' class="settings-icon"></box-icon>
                 <span class="settings-text">Configuración</span>
             </a>
+            <div class="menu-overlay" id="settingsMenuOverlay">
+                <a href="#">Preferencias</a>
+                <a href="#">Seguridad</a>
+            </div>
         </div>
-
+    
         <div class="notifications">
-            <a href="" class="notifications-link">
+            <a href="#" class="notifications-link">
                 <box-icon name='bell' color='#ffffff' class="notifications-icon"></box-icon>
                 <span class="notifications-text">Notificaciones</span>
             </a>
+            <div class="menu-offCanvas" id="notificationsMenuOffCanvas">
+                <div class="offcanvas-header">
+                    <h3>Notificaciones</h3>
+                    <button class="closeNotificationsOffcanvas" id="closeNotificationsOffcanvas">X</button>
+                </div>
+                <ul class="notifications-list">
+                    <li>Notificación 1: Lorem ipsum...</li>
+                    <li>Notificación 2: Dolor sit amet...</li>
+                    <li>Notificación 3: Consectetur adipiscing elit...</li>
+                </ul>
+            </div>
         </div>
     </header>
+    
 
     <main>
         <section class="seccionMetas">
@@ -103,5 +123,6 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.9/index.global.min.js'></script>
     <script src="./Js/calendario.js"></script>
+    <script src="./Js/userInfo.js"></script>
 </body>
 </html>
